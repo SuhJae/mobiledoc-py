@@ -35,7 +35,7 @@ with open('doc.json', 'w') as f:
 This will create redy-to-use mobiledoc like below. (click expand to see the mobiledoc)
 <details>
 <summary>Full mobiledoc</summary>
-```json
+<pre><code>
 {
     "version": "0.3.2",
     "markups": [
@@ -87,7 +87,8 @@ This will create redy-to-use mobiledoc like below. (click expand to see the mobi
         ]]
     ]
 }
-```
+</code></pre>
+
 </details>
 
 ## **API**
