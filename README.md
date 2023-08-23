@@ -108,7 +108,6 @@ This will create redy-to-use mobiledoc like below. (click expand to see the mobi
     `: code
     [text](link): hyperlink
     ```
-- **`add_divider()`**: Adds a divider to mobiledoc.
 - **`custom_data(name: str, value)`**: Adds custom data to mobiledoc.
 - **`get_markups()`**: Returns the current markups.
 - **`get_sections()`**: Returns the current sections.
