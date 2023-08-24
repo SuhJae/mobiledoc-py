@@ -144,6 +144,20 @@ class Mobiledoc:
         divider_idx = self.cards.index(["hr", {}])
         self.sections.append([10, divider_idx])
 
+    def add_image(self, url:str, caption:str = None):
+        """ Method to add an image to mobiledoc """
+        card = ["image", {"src": url}]
+        if caption:
+            card[1]["caption"] = caption
+
+        # check if card already exists
+        if card not in self.cards:
+            self.cards.append(card)
+
+        # find the index of the card and point to it
+        card_idx = self.cards.index(card)
+        self.sections.append([10, card_idx])
+
     def custom_data(self, name: str, value):
         """ Method to add custom data to mobiledoc """
         self.custom[name] = value
@@ -209,6 +223,8 @@ if __name__ == "__main__":
     mobiledoc.add_formatted_text("Using **markdown-like** syntax, you can *format* the text.")
     mobiledoc.add_formatted_text(["You may also add a `list of strings`.", "To ^add^ ^^multiple^^ paragraphs.",
                                   "You can also add [hyperlinks](https://python.org)."])
+    mobiledoc.add_image("https://placehold.co/600x400/EEE/31343C", "You can add images!")
+    mobiledoc.add_image("https://placehold.co/600x400/EEE/31343C")
 
     mobiledoc = mobiledoc.serialize()  # This will save the mobiledoc as a dictionary
 
