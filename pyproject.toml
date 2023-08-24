@@ -1,0 +1,18 @@
+[project]
+name = "mobiledoc"
+version = "0.0.1"
+authors = [
+  { name="Suh Jae", email="wonyul@joseon.space" },
+]
+description = "A Python package aimed to simplify the processing of the mobiledoc format."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SuhJae/mobiledoc-py/"
+"Bug Tracker" = "https://github.com/SuhJae/mobiledoc-py/issues"

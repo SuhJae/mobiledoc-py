@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: mobiledoc
+Version: 0.0.1
+Summary: A Python package aimed to simplify the processing of the mobiledoc format.
+Author-email: Suh Jae <wonyul@joseon.space>
+Project-URL: Homepage, https://github.com/SuhJae/mobiledoc-py/
+Project-URL: Bug Tracker, https://github.com/SuhJae/mobiledoc-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # **Mobiledoc**
 
 A Python package aimed to simplify the processing of the mobiledoc format.
@@ -10,8 +24,7 @@ A Python package aimed to simplify the processing of the mobiledoc format.
 
 ## **Installation**
 
-`pip install mobiledoc`
-[PyPi](https://pypi.org/project/mobiledoc/)
+coming soon to pypi
 
 ## **Example**
 

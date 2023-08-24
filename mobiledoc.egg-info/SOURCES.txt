@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+mobiledoc/__init__.py
+mobiledoc/mobiledoc.py
+mobiledoc.egg-info/PKG-INFO
+mobiledoc.egg-info/SOURCES.txt
+mobiledoc.egg-info/dependency_links.txt
+mobiledoc.egg-info/top_level.txt
