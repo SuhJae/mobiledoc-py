@@ -35,67 +35,66 @@ with open('doc.json', 'w') as f:
 ```
 This will create redy-to-use mobiledoc like below. (click expand to see the mobiledoc)
 <details>
-<summary>Full mobiledoc</summary>
-<pre><code>
-{
-    "version": "0.3.2",
-    "markups": [
-        ["b"],
-        ["i"],
-        ["code"],
-        ["sub"],
-        ["sup"],
-        ["a", ["href", "https://python.org"]]
-    ],
-    "atoms": [],
-    "cards": [
-        ["hr", {}]
-    ],
-    "sections": [
-        [1, "p", [
-            [0, [], 0, "This is a basic text, which is not formatted."]
-        ]],
-        [1, "p", [
-            [0, [], 0, "You may also add a list of strings."]
-        ]],
-        [1, "p", [
-            [0, [], 0, "To add multiple paragraphs."]
-        ]],
-        [10, 0],
-        [1, "p", [
-            [0, [], 0, "Using "],
-            [0, [0], 1, "markdown-like"],
-            [0, [], 0, " syntax, you can "],
-            [0, [1], 1, "format"],
-            [0, [], 0, " the text."]
-        ]],
-        [1, "p", [
-            [0, [], 0, "You may also add a "],
-            [0, [2], 1, "list of strings"],
-            [0, [], 0, "."]
-        ]],
-        [1, "p", [
-            [0, [], 0, "To "],
-            [0, [3], 1, "add"],
-            [0, [], 0, " "],
-            [0, [4], 1, "multiple"],
-            [0, [], 0, " paragraphs."]
-        ]],
-        [1, "p", [
-            [0, [], 0, "You can also add "],
-            [0, [5], 1, "hyperlinks"],
-            [0, [], 0, "."]
-        ]]
-    ]
-}
-</code></pre>
+  <summary>Full mobiledoc</summary>
 
+  ```json
+  {
+      "version": "0.3.2",
+      "markups": [
+          ["b"],
+          ["i"],
+          ["code"],
+          ["sub"],
+          ["sup"],
+          ["a", ["href", "https://python.org"]]
+      ],
+      "atoms": [],
+      "cards": [
+          ["hr", {}]
+      ],
+      "sections": [
+          [1, "p", [
+              [0, [], 0, "This is a basic text, which is not formatted."]
+          ]],
+          [1, "p", [
+              [0, [], 0, "You may also add a list of strings."]
+          ]],
+          [1, "p", [
+              [0, [], 0, "To add multiple paragraphs."]
+          ]],
+          [10, 0],
+          [1, "p", [
+              [0, [], 0, "Using "],
+              [0, [0], 1, "markdown-like"],
+              [0, [], 0, " syntax, you can "],
+              [0, [1], 1, "format"],
+              [0, [], 0, " the text."]
+          ]],
+          [1, "p", [
+              [0, [], 0, "You may also add a "],
+              [0, [2], 1, "list of strings"],
+              [0, [], 0, "."]
+          ]],
+          [1, "p", [
+              [0, [], 0, "To "],
+              [0, [3], 1, "add"],
+              [0, [], 0, " "],
+              [0, [4], 1, "multiple"],
+              [0, [], 0, " paragraphs."]
+          ]],
+          [1, "p", [
+              [0, [], 0, "You can also add "],
+              [0, [5], 1, "hyperlinks"],
+              [0, [], 0, "."]
+          ]]
+      ]
+  }
+  ```
 </details>
 
 ## **API**
 
-### **Mobiledoc Methods**
-
+### Composing mobiledoc
 - **`add_basic_text(text: Union[str, List[str]])`**: Adds basic text to mobiledoc.
 - **`add_formatted_text(text: Union[str, List[str]])`**: Adds markdown-like formatted text to mobiledoc.
   - **Supported Markdown-like Patterns:**
@@ -109,13 +108,20 @@ This will create redy-to-use mobiledoc like below. (click expand to see the mobi
     `: code
     [text](link): hyperlink
     ```
+- **`add_divider()`**: Adds a divider to mobiledoc.
+- **`add_image(url: str, caption: str = None)`**: Adds an image to mobiledoc.
 - **`custom_data(name: str, value)`**: Adds custom data to mobiledoc.
+
+### Serializing mobiledoc
+- **`serialize()`**: Returns the serialized mobiledoc Python dictionary that can be passed to `json.dump()`.
+
+### Checking mobiledoc
 - **`get_markups()`**: Returns the current markups.
 - **`get_sections()`**: Returns the current sections.
 - **`get_atoms()`**: Returns the current atoms.
 - **`get_cards()`**: Returns the current cards.
 - **`get_custom()`**: Returns the current custom data.
-- **`serialize()`**: Returns the serialized mobiledoc.
+
 
 ## **Contributing**
 
