@@ -110,6 +110,14 @@ This will create redy-to-use mobiledoc like below. (click expand to see the mobi
     ```
 - **`add_divider()`**: Adds a divider to mobiledoc.
 - **`add_image(url: str, caption: str = None)`**: Adds an image to mobiledoc.
+- **`add_button(text: str, url: str, alignment:str = "center")`**: Adds a button to mobiledoc.
+- **`add_HTML(self, html:str):`**: Adds raw HTML card to mobiledoc.
+- **`add_markdown(self, markdown:str):`**: Adds raw markdown card to mobiledoc.
+- **`add_file(self, url: str, filename: str, filetitle: str, filesize: int, filecaption: str = ""):`**: Adds a file to mobiledoc.
+- **`def add_callout(self, text: str, emoji: str = "", color: str = "accent"):`**: Adds a callout to mobiledoc.
+
+
+
 - **`custom_data(name: str, value)`**: Adds custom data to mobiledoc.
 
 ### Serializing mobiledoc
