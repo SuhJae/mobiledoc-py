@@ -1,0 +1,62 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://dummyimage.com/374x22",
+                "caption": "Against behavior response morning go special happen."
+            }
+        ],
+        [
+            "button",
+            {
+                "text": "until",
+                "url": "https://williams-daniels.com/",
+                "alignment": "center"
+            }
+        ],
+        [
+            "hr",
+            {}
+        ],
+        [
+            "html",
+            {
+                "html": "<div>Mixed Case</div>"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            1,
+            "p",
+            [
+                [
+                    0,
+                    [],
+                    0,
+                    "Sit military production arm half. Face son law we tell.\nChance air let arm employee voice. Fish level today sell do. Draw quality learn break put dark various."
+                ]
+            ]
+        ],
+        [
+            10,
+            0
+        ],
+        [
+            10,
+            1
+        ],
+        [
+            10,
+            2
+        ],
+        [
+            10,
+            3
+        ]
+    ]
+}

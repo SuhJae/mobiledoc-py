@@ -1,1 +1,1 @@
-from .mobiledoc import mobiledoc
+from .mobiledoc import Mobiledoc

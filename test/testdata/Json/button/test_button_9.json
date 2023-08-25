@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "button",
+            {
+                "text": "mouth",
+                "url": "https://www.bird-webster.com/",
+                "alignment": "center"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

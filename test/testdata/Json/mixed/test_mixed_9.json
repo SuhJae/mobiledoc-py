@@ -1,0 +1,62 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://picsum.photos/129/209",
+                "caption": "When senior make something far."
+            }
+        ],
+        [
+            "button",
+            {
+                "text": "debate",
+                "url": "https://foster.com/",
+                "alignment": "center"
+            }
+        ],
+        [
+            "hr",
+            {}
+        ],
+        [
+            "html",
+            {
+                "html": "<div>Mixed Case</div>"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            1,
+            "p",
+            [
+                [
+                    0,
+                    [],
+                    0,
+                    "Thank positive put audience road. Even yes might company economic.\nBecome information among manager large."
+                ]
+            ]
+        ],
+        [
+            10,
+            0
+        ],
+        [
+            10,
+            1
+        ],
+        [
+            10,
+            2
+        ],
+        [
+            10,
+            3
+        ]
+    ]
+}

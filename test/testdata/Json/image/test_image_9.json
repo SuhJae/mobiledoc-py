@@ -1,0 +1,20 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://placekitten.com/57/85",
+                "caption": "Travel behavior firm natural sound."
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

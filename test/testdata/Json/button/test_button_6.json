@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "button",
+            {
+                "text": "father",
+                "url": "https://www.clark.org/",
+                "alignment": "center"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

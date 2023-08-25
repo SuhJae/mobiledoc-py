@@ -1,0 +1,20 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://picsum.photos/668/549",
+                "caption": "Decision response cut leave phone whom."
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "file",
+            {
+                "src": "campaign.mov",
+                "fileName": "add.tiff",
+                "fileTitle": "themselves.odt",
+                "fileCaption": "",
+                "fileSize": 4106
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://placekitten.com/413/686",
+                "caption": "Expect summer commercial car war guess miss."
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

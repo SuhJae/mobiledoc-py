@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "callout",
+            {
+                "calloutEmoji": "\ud83d\udc71\ud83c\udffd\u200d\u2642\ufe0f",
+                "calloutText": "Strategy amount middle position.",
+                "backgroundColor": "accent"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

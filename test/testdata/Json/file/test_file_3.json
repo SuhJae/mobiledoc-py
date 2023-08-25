@@ -1,0 +1,23 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "file",
+            {
+                "src": "traditional.flac",
+                "fileName": "whatever.css",
+                "fileTitle": "detail.jpeg",
+                "fileCaption": "",
+                "fileSize": 7721
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

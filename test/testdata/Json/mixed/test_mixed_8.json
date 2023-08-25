@@ -1,0 +1,62 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://dummyimage.com/253x151",
+                "caption": "Outside figure opportunity would feel."
+            }
+        ],
+        [
+            "button",
+            {
+                "text": "per",
+                "url": "https://www.gordon-glenn.com/",
+                "alignment": "center"
+            }
+        ],
+        [
+            "hr",
+            {}
+        ],
+        [
+            "html",
+            {
+                "html": "<div>Mixed Case</div>"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            1,
+            "p",
+            [
+                [
+                    0,
+                    [],
+                    0,
+                    "Focus heavy choice ready.\nEstablish worry case clearly learn cultural late. Garden determine mother notice under even mouth.\nTrip but door economy. Space person world hand recognize."
+                ]
+            ]
+        ],
+        [
+            10,
+            0
+        ],
+        [
+            10,
+            1
+        ],
+        [
+            10,
+            2
+        ],
+        [
+            10,
+            3
+        ]
+    ]
+}

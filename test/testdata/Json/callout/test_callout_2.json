@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "callout",
+            {
+                "calloutEmoji": "\ud83e\udd16",
+                "calloutText": "Two station director partner measure.",
+                "backgroundColor": "accent"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

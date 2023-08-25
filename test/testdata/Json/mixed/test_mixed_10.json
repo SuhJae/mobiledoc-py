@@ -1,0 +1,62 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://dummyimage.com/437x728",
+                "caption": "Somebody read month build."
+            }
+        ],
+        [
+            "button",
+            {
+                "text": "whose",
+                "url": "https://acosta.com/",
+                "alignment": "center"
+            }
+        ],
+        [
+            "hr",
+            {}
+        ],
+        [
+            "html",
+            {
+                "html": "<div>Mixed Case</div>"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            1,
+            "p",
+            [
+                [
+                    0,
+                    [],
+                    0,
+                    "Prove all plan manage. Although property cost more television read.\nSister across without animal future door minute. Appear successful role manager its future. Team hope level individual simply."
+                ]
+            ]
+        ],
+        [
+            10,
+            0
+        ],
+        [
+            10,
+            1
+        ],
+        [
+            10,
+            2
+        ],
+        [
+            10,
+            3
+        ]
+    ]
+}

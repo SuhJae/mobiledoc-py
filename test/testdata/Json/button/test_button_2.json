@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "button",
+            {
+                "text": "enter",
+                "url": "http://hess-mcclain.net/",
+                "alignment": "center"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}

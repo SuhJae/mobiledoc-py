@@ -1,0 +1,62 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "image",
+            {
+                "src": "https://placekitten.com/122/988",
+                "caption": "Special owner consumer."
+            }
+        ],
+        [
+            "button",
+            {
+                "text": "debate",
+                "url": "http://lopez.info/",
+                "alignment": "center"
+            }
+        ],
+        [
+            "hr",
+            {}
+        ],
+        [
+            "html",
+            {
+                "html": "<div>Mixed Case</div>"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            1,
+            "p",
+            [
+                [
+                    0,
+                    [],
+                    0,
+                    "Long end PM move happy lose. Develop measure issue institution owner Republican. Year amount phone few ahead myself."
+                ]
+            ]
+        ],
+        [
+            10,
+            0
+        ],
+        [
+            10,
+            1
+        ],
+        [
+            10,
+            2
+        ],
+        [
+            10,
+            3
+        ]
+    ]
+}

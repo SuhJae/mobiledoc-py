@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "markups": [],
+    "atoms": [],
+    "cards": [
+        [
+            "callout",
+            {
+                "calloutEmoji": "\ud83c\uddec\ud83c\uddeb",
+                "calloutText": "Might office medical return simply.",
+                "backgroundColor": "accent"
+            }
+        ]
+    ],
+    "sections": [
+        [
+            10,
+            0
+        ]
+    ]
+}
