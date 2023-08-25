@@ -1,7 +1,9 @@
+from pathlib import Path
 import unittest
-import os
+import sys
 import subprocess
 import json
+
 
 class TestMobiledocGeneratedFiles(unittest.TestCase):
 
@@ -9,10 +11,17 @@ class TestMobiledocGeneratedFiles(unittest.TestCase):
         self.testdata_python_dir = "testdata/python"
         self.testdata_json_dir = "testdata/Json"
 
-    def execute_and_check_py_file(self, test_type, idx):
-        """Helper method to execute a given Python file."""
-        py_file_path = f"{self.testdata_python_dir}/{test_type}/test_{test_type}_{idx}.py"
-        result = subprocess.run(['python3', py_file_path], capture_output=True, text=True)
+    def execute_and_check_py_file(self, test_type, test_num):
+        py_file_path = f"testdata/python/{test_type}/test_{test_type}_{test_num}.py"
+
+        # Update sys.path to include the directory containing mobiledoc
+        sys.path.append(str(Path(py_file_path).parent.parent.parent))  # Adjusting path to repository root
+
+        result = subprocess.run([sys.executable, py_file_path], capture_output=True, text=True)
+
+        # Remove the path adjustment (cleanup)
+        sys.path.remove(str(Path(py_file_path).parent.parent.parent))
+
         self.assertEqual(result.returncode, 0, msg=f"Error executing: {py_file_path}\n{result.stderr}")
 
     def deserialize_and_check_json_file(self, test_type, idx):

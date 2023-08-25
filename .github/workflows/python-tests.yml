@@ -30,6 +30,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install mobiledoc module
+      run: |
+        pip install -e .
+
     - name: Run tests
       run: |
         cd test
