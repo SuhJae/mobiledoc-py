@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: mobiledoc
-Version: 0.2.0
+Version: 0.2.1
 Summary: A Python package aimed to simplify the processing of the mobiledoc format.
 Author-email: Suh Jae <wonyul@joseon.space>
 Project-URL: Homepage, https://github.com/SuhJae/mobiledoc-py/

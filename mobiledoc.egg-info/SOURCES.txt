@@ -9,3 +9,5 @@ mobiledoc.egg-info/PKG-INFO
 mobiledoc.egg-info/SOURCES.txt
 mobiledoc.egg-info/dependency_links.txt
 mobiledoc.egg-info/top_level.txt
+test/__init__.py
+test/test_mobiledoc.py
