@@ -6,6 +6,7 @@ A Python package aimed to simplify the processing of the mobiledoc format.
 
 - **Simple API**: Intuitive methods to easily add text, formatted text, dividers, and custom data.
 - **Markdown-like Formatting**: Write using familiar markdown-like syntax, and let the package do the heavy lifting.
+- **Convert HTML to Markdown**: Convert HTML to markdown using the `add_markdown_from_html()` method.
 - **Serialization**: Serialize the mobiledoc object into a JSON-friendly format.
 
 ## **Installation**
@@ -114,8 +115,8 @@ This will create redy-to-use mobiledoc like below. (click expand to see the mobi
 - **`add_HTML(self, html:str):`**: Adds raw HTML card to mobiledoc.
 - **`add_markdown(self, markdown:str):`**: Adds raw markdown card to mobiledoc.
 - **`add_file(self, url: str, filename: str, filetitle: str, filesize: int, filecaption: str = ""):`**: Adds a file to mobiledoc.
-- **`def add_callout(self, text: str, emoji: str = "", color: str = "accent"):`**: Adds a callout to mobiledoc.
-
+- **`add_callout(self, text: str, emoji: str = "", color: str = "accent"):`**: Adds a callout to mobiledoc.
+- **`add_markdown_from_html(html_string: str):`**: Adds markdown from HTML to mobiledoc.
 
 
 - **`custom_data(name: str, value)`**: Adds custom data to mobiledoc.

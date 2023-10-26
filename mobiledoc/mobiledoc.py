@@ -1,4 +1,5 @@
 from typing import Union, List
+from markdownify import markdownify as md
 
 
 class Mobiledoc:
@@ -218,6 +219,12 @@ class Mobiledoc:
         card_idx = self.cards.index(card)
         self.sections.append([10, card_idx])
 
+    def add_markdown_from_html(self, html_string: str):
+        """ Method to add markdown from HTML """
+        markdown = md(html_string)
+        self.add_markdown(markdown)
+        return markdown
+
     def custom_data(self, name: str, value):
         """ Method to add custom data to mobiledoc """
         self.custom[name] = value
@@ -289,6 +296,7 @@ if __name__ == "__main__":
     mobiledoc.add_markdown("You can add **raw markdown** cards! \n1. list item one\n2. list item two")
     mobiledoc.add_file("https://placehold.co/600x400/EEE/31343C", "filename", "filetitle", 1000)
     mobiledoc.add_callout("You can add callouts!", "🔥", "accent")
+    mobiledoc.add_markdown_from_html('<b>Hello</b> <a href="http://github.com">GitHub</a>')
 
     mobiledoc = mobiledoc.serialize()  # This will save the mobiledoc as a dictionary
 
