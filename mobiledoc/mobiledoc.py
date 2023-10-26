@@ -1,4 +1,5 @@
 from typing import Union, List
+
 from markdownify import markdownify as md
 
 
@@ -10,6 +11,15 @@ class Mobiledoc:
         self.cards = []  # includes custom data (e.g., buttons)
         self.sections = []  # includes the actual text
         self.custom = {}  # user-defined custom data
+
+    def _add_card(self, card):
+        """ Helper method to add a card to mobiledoc """
+        if card not in self.cards:
+            self.cards.append(card)
+
+        # find the index of the card and point to it
+        card_idx = self.cards.index(card)
+        self.sections.append([10, card_idx])
 
     def add_basic_text(self, text: Union[str, List[str]]):
         """ Method to add basic text to mobiledoc """
@@ -137,93 +147,40 @@ class Mobiledoc:
 
     def add_divider(self):
         """ Method to add a divider to mobiledoc """
-        # add a divider to cards if not already added
-        if ["hr", {}] not in self.cards:
-            self.cards.append(["hr", {}])
+        self._add_card(["hr", {}])
 
-        # find the index of the divider and point to it
-        divider_idx = self.cards.index(["hr", {}])
-        self.sections.append([10, divider_idx])
-
-    def add_image(self, url:str, caption:str = None):
+    def add_image(self, url: str, caption: str = None):
         """ Method to add an image to mobiledoc """
         card = ["image", {"src": url}]
         if caption:
             card[1]["caption"] = caption
 
-        # check if card already exists
-        if card not in self.cards:
-            self.cards.append(card)
+        self._add_card(card)
 
-        # find the index of the card and point to it
-        card_idx = self.cards.index(card)
-        self.sections.append([10, card_idx])
-
-    def add_button(self, text:str, url:str, alignment:str = "center"):
+    def add_button(self, text: str, url: str, alignment: str = "center"):
         """ Method to add a button to mobiledoc """
-        card = ["button", {"text": text, "url": url, "alignment": alignment}]
+        self._add_card(["button", {"text": text, "url": url, "alignment": alignment}])
 
-        # check if card already exists
-        if card not in self.cards:
-            self.cards.append(card)
-
-        # find the index of the card and point to it
-        card_idx = self.cards.index(card)
-        self.sections.append([10, card_idx])
-
-    def add_HTML(self, html:str):
+    def add_html(self, html: str):
         """ Method to add HTML  cardto mobiledoc """
-        card = ["html", {"html": html}]
+        self._add_card(["html", {"html": html}])
 
-        # check if card already exists
-        if card not in self.cards:
-            self.cards.append(card)
-
-        # find the index of the card and point to it
-        card_idx = self.cards.index(card)
-        self.sections.append([10, card_idx])
-
-    def add_markdown(self, markdown:str):
+    def add_markdown(self, markdown: str):
         """ Method to add markdown card to mobiledoc """
-        card = ["markdown", {"markdown": markdown}]
-
-        # check if card already exists
-        if card not in self.cards:
-            self.cards.append(card)
-
-        # find the index of the card and point to it
-        card_idx = self.cards.index(card)
-        self.sections.append([10, card_idx])
+        self._add_card(["markdown", {"markdown": markdown}])
 
     def add_file(self, url: str, filename: str, filetitle: str, filesize: int, filecaption: str = ""):
         """ Method to add a file to mobiledoc """
-        card = ["file", {"src": url, "fileName": filename, "fileTitle": filetitle, "fileCaption": filecaption,
-                         "fileSize": filesize}]
-
-        # check if card already exists
-        if card not in self.cards:
-            self.cards.append(card)
-
-        # find the index of the card and point to it
-        card_idx = self.cards.index(card)
-        self.sections.append([10, card_idx])
+        self._add_card(["file", {"src": url, "fileName": filename, "fileTitle": filetitle, "fileCaption": filecaption,
+                                 "fileSize": filesize}])
 
     def add_callout(self, text: str, emoji: str = "", color: str = "accent"):
-        card = ["callout", {"calloutEmoji": emoji, "calloutText": text, "backgroundColor": color}]
-
-        # check if card already exists
-        if card not in self.cards:
-            self.cards.append(card)
-
-        # find the index of the card and point to it
-        card_idx = self.cards.index(card)
-        self.sections.append([10, card_idx])
+        self._add_card(["callout", {"calloutEmoji": emoji, "calloutText": text, "backgroundColor": color}])
 
     def add_markdown_from_html(self, html_string: str):
         """ Method to add markdown from HTML """
         markdown = md(html_string)
         self.add_markdown(markdown)
-        return markdown
 
     def custom_data(self, name: str, value):
         """ Method to add custom data to mobiledoc """
@@ -292,7 +249,7 @@ if __name__ == "__main__":
                                   "You can also add [hyperlinks](https://python.org)."])
     mobiledoc.add_image("https://placehold.co/600x400/EEE/31343C", "You can add images!")
     mobiledoc.add_button("You can also buttons!", "https://python.org")
-    mobiledoc.add_HTML("<ul><li>You can also add HTML</li><li>Like this</li></ul>")
+    mobiledoc.add_html("<ul><li>You can also add HTML</li><li>Like this</li></ul>")
     mobiledoc.add_markdown("You can add **raw markdown** cards! \n1. list item one\n2. list item two")
     mobiledoc.add_file("https://placehold.co/600x400/EEE/31343C", "filename", "filetitle", 1000)
     mobiledoc.add_callout("You can add callouts!", "🔥", "accent")
